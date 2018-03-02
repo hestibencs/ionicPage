@@ -5,11 +5,11 @@ import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   declarations: [
-    ListPage,
-    ComponentsModule
+    ListPage
   ],
   imports: [
     IonicPageModule.forChild(ListPage),
+    ComponentsModule
   ],
 })
 export class ListPageModule {}
