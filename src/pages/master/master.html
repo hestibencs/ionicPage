@@ -1,0 +1,22 @@
+<ion-split-pane>
+
+  <ion-menu [content]="content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <a menuClose ion-item href="/#/master/about">Home</a>
+        <a menuClose ion-item href="/#/master/list">Listado</a>
+        <a menuClose ion-item href="/#/login">Cerrar Sesión</a>
+      </ion-list>
+    </ion-content>
+
+  </ion-menu>
+
+  <ion-nav [root]="masterPage" #content swipeBackEnabled="false" main></ion-nav>
+
+</ion-split-pane>
